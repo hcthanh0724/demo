@@ -1,0 +1,27 @@
+h1{
+    color: blue;
+text-align: center;
+}
+#a{
+    background-color: yellow;
+}
+#b{
+    background-color: orange;
+}
+
+#e{
+    color: blue;
+    border: none !important;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+
+#z th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+
+

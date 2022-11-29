@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td>Amount</td>
+    <td>From Currency</td>
+    <td>To Currency</td>
+  </tr>
+  <tr>
+    <td><input type="number" id="price"></td>
+    <td><select id="select1">
+      <option value="VN">VietNam</option>
+      <option value="US">USA</option>
+      <option value="Thai">Thailand</option>
+      <option value="JAV">Japan</option>
+    </select></td>
+    <td>
+      <select id="select2">
+        <option value="Dong">Dong</option>
+        <option value="Dollar">Dollar</option>
+        <option value="Baht">Baht</option>
+        <option value="Yen">Yen</option>
+      </select>
+    </td>
+    <td> <button onclick="Change()">Convert</button></td>
+  </tr>
+
+</table>
+<script>
+
+function Change() {
+  let amount = document.getElementById("price").value;
+  let National = document.getElementById("select1").value;
+  let Money = document.getElementById("select2").value;
+  if (National==Money){
+alert(amount);
+  }
+}
+</script>
+</body>
+</html>

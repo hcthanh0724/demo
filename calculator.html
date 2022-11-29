@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+</head>
+<body>
+<h1> Calculator</h1>
+<form >
+  <input type="number" id="a">
+  <input type="number" id="b">
+<br><br>
+<button type="button" onclick="addition()" >Addition(+)</button>
+<button type="button" onclick="sub()" >Subtraction(-)</button>
+<button type="button" onclick="mul()" >Multiplication(X)</button>
+<button type="button" onclick="div()" >Division(/)</button>
+<br>
+<div id="z"></div>
+</form>
+<script>
+    // let a = document.getElementById("a").value;
+    // let b = document.getElementById("b").value;
+    // let c = Number(a)+ Number(b);
+    function addition() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = Number(a)+ Number(b);
+        document.getElementById("z").innerHTML= ("Result Addition:" + Number(c) )
+    }
+    function sub() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let d = Number(a) - Number(b);
+        document.getElementById("z").innerHTML = ("Result Subtraction:" + Number(d))
+    }
+    function mul() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let e = Number(a) * Number(b)
+        document.getElementById("z").innerHTML = ("Result Multiplication" + Number(e))
+    }
+    function div() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let f = Number(a) / Number(b)
+        document.getElementById("z").innerHTML = ("Result Division" + Number(f))
+    }
+
+</script>
+
+</body>
+</html>

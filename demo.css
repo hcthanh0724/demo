@@ -1,0 +1,35 @@
+
+h1 {
+    color: aqua;
+    text-align: center;
+}
+#a {
+    color: blueviolet;
+}
+#b {
+    color: blueviolet;
+}
+#c th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#c {
+    border-collapse: collapse;
+}
+
+.e {
+    background: cornflowerblue;
+    color: orange;
+    text-align: center;
+}
+.z {
+    background: darkseagreen;
+    color: lightpink;
+    text-align: center;
+}
+table {
+    margin: auto;
+    text-align: center;
+}

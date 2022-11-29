@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for(i = 1; i <= 5; i++){
+        for( j = 1; j <= i; j++){
+            document.write("$");
+        }
+        document.write("<br>");
+    }
+
+//     bắt đầu vòng lặp i1 với i = 1 <5
+//     tiến vào vòng lặp j1 với j = 1 = i
+// lúc này máy sẽ thực hiện câu lệnh dưới viết ra chữ $
+// j++ = 2 không thỏa mãn j <= i nên sẽ ngừng vòng lặp của j và thực hiện vòng lặp 1 của i là xuống dòng
+// lúc này i ++ nên i = 2 => tiến vào vòng lặp 2 của j với j =2 =i => viết ra 2 chữ $
+    for(i = 5; i >= 1; i--){
+        for ( j = 1; j <= i; j++){
+            document.write("$");
+        }
+        document.write("<br>");
+    }
+    for(i = 0; i <= 5; i++){
+        for (j = 0; j <= i; j++){
+            document.write("&nbsp;&nbsp;")
+        }
+        for(j = 0; j <= 5 - i; j++ ){
+            document.write("$")
+        }
+        document.write("<br>")
+    }
+    for(i = 5; i >= 0; i--){
+        for(j = 0; j <= i; j++){
+            document.write("&nbsp;&nbsp")
+        }
+        for(j = 0; j <= 5 - i; j++ ){
+            document.write("$")
+        }
+        document.write("<br>")
+    }
+
+
+</script>
+</body>
+</html>

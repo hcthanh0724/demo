@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let i
+  // for (let i = 0; i < 6; i++) {
+  //   document.write("The number is" +i +"<br>")
+  // }
+  //
+  // while( num != -1 ) {
+  //     num = prompt("Enter a number: ");
+  //     alert(number);
+  //     //phần code tính tổng
+  //     total += num;
+  // }
+
+
+
+  let soul;
+  soul = "<table style='border: 1px solid; width: 800px; height: 500px; border-collapse: collapse; text-align: center'>";
+  for (i = 2; i <= 9; i++) {
+      soul = soul + "<tr>";
+      for (j = 1; j < 10; j++) {
+          product = i * j;
+          soul = soul + "<td style='border: 1px solid; border-collapse: collapse'>" + i + "x" + j + '=' + product + "</td>";
+      }
+      soul = soul + '</td>';
+  }
+  soul = soul + '</table>'
+  document.write(soul)
+
+  // let num = prompt('nhập số');
+  // let count = 0;
+  // let N = 2;
+  // while (count<num) {
+  //     let check = true;
+  //     for (let i = 2; i < N; i++) {
+  //         if (N % i === 0) {
+  //             check = false;
+  //             break;
+  //         }
+  //     }
+  //     if (check) {
+  //         count ++;
+  //         document.write(N + '<br>')
+  //     }
+  //     N++;
+  // }
+
+
+
+
+</script>
+</body>
+</html>
